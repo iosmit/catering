@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catering Food in Clermont, Florida by Darlene. Made with Love.">
+    <meta name="keywords" content="Food Catering">
+    <meta name="theme-color" content="#000" />
+
+
+    <title>Darlene's Catering</title>
+
+
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="./Resources/Sass/main.css">
+    <link rel="icon" href="logo.png">
+
+
+    <script src="main.js"></script>
+    <script src="./Resources/script/filterSubmeniu.js"></script>
+    <script src="./Resources/script/lightbox.js" defer></script>
+ 
+
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <a href="./index.html"><img src="./Resources/assets/Icon/home.svg" class="navbar__logo navbar__logo--active"></a>
+        <a id="myBtn" href="#"><img id="triggger" src="./Resources/assets/Icon/food.svg" class="navbar__logo "></a>
+                 <!----------------LightBox for Menu----------------------------->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="./Resources/assets/Images/Darlene's Catering Menu.jpg" width="100%">
+                    </div>
+                </div>
+                <!----------------LightBox for Menu----------------------------->
+        <a href="./contact.html"><img src="./Resources/assets/Icon/phone1.png" class="navbar__logo"></a>
+    </div>
+
+    <div class="container container__home">
+        <div class="background">
+
+        </div>
+
+        <div class="home__elements">
+           
+            <div class="container container__meniu">
+                
+                <div class="row submeniu">
+                    <div class="submeniu__element submeniu__element--active" id="sides" onclick="filter(sides)">
+                        <img src="./Resources/assets/Icon/appetizer.png" alt="Appetizer Icon" class="submeniu__element__image ">
+                        <p class="submeniu__element__title">Side Dishes</p>
+                    </div>
+
+                    <div class="submeniu__element" id="mains" onclick="filter(mains)">
+                        <img src="./Resources/assets/Icon/spaghetti.svg" alt="Main Courses Icon" class="submeniu__element__image">
+                        <p class="submeniu__element__title">Main Course</p>
+                    </div>
+                    
+                    <div class="submeniu__element" id="desserts" onclick="filter(desserts)">
+                        <img src="./Resources/assets/Icon/icecream.svg" alt="Dessert Icon" class="submeniu__element__image">
+                        <p class="submeniu__element__title">Desserts</p>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="food__elements">
+                    <div id="food-sides">
+                            <figure class="card " id="c1">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/bakedbeans.png" alt="Baked Beans"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Baked Beans</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$45</span>
+                                        </h4>
+                                    </div>
+                                </div>
+    
+                            </figure>
+
+                            <figure class="card" id="c2">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/cornbread.png" alt="Corn Bread"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Corn Bread</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$30</span>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                               
+                            </figure>
+                            
+                            <figure class="card" id="c3">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/greenbeans.png" alt="Green Beans"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Green Beans</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$40</span>
+                                        </h4>
+                                        </h4>
+                                    </div>
+                                </div>
+            
+            
+            
+                                
+                            </figure>
+            
+                            <figure class="card" id="c4">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/yellowrice.png" alt="Yellow Rice"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Yellow Rice</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$30</span>
+                                        </h4>
+                                        </h4>
+                                    </div>
+                                </div>      
+                            
+                            </figure>
+
+                            <figure class="card" id="c5">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/collardgreens.png" alt="Collard Greens"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Collard Greens</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$60</span>
+                                        </h4>
+                                        </h4>
+                                    </div>
+                                </div>             
+                                
+                            </figure>
+
+                            <figure class="card" id="c6">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/cornonthecob.png" alt="Corn on the Cob"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Corn on the Cob</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$30</span>
+                                        </h4>
+                                        </h4>
+                                    </div>
+                                </div>             
+                              
+                            </figure>
+
+                            <figure class="card" id="c7">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/mashedpotatoes.png" alt="Mashed Potatoes"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Mashed Potatoes</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$30</span>
+                                        </h4>
+                                        </h4>
+                                    </div>
+                                </div>             
+                              
+                            </figure>
+
+                            <figure class="card" id="c8">
+                                <div class="row ">
+                                    <img src="./Resources/assets/Images/menu/macaroni.png" alt="Macaroni and Cheese"
+                                        class="card__image">
+                                    <div class="column column--justifyContentCenter">
+                                        <figcaption class="card__title">Macaroni and Cheese</figcaption>
+                                        <h4 class="card__details">Price: <span class="important">$90</span>
+                                        </h4>
+                                        </h4>
+                                    </div>
+                                </div>             
+                             
+                            </figure>
+            
+            
+            
+                        
+                    </div>
+
+                    <div id="food-mains" style="display: none;">
+                        <figure class="card " id="f1">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/fish.png" alt="Fried Fish with Grits"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Fried Fish with Grits</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$100</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f2">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/meatloaf.png" alt="Meatloaf"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Meatloaf</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$60</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f3">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/beef.png" alt="Beef Stew"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Beef Stew</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$60</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f4">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/seafood.png" alt="Seafood" class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Seafood Rice or Pasta</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$100</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f5">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/lasagna.png" alt="Lasagna"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Lasagna</figcaption>
+                                    <p class="card__subtitle important">Meat(+$10) or Vegetarian</p>
+                                    <h4 class="card__details">Price: <span class="important">$80</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f6">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/pastawithchicken.png" alt="Pasta"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Pasta with Chicken</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$60</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f7">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/spaghetti.png" alt="Spaghetti"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Spaghetti with Meat Sauce</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$60</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+
+                        <figure class="card " id="f8">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/chicken.png" alt="Chicken"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Chicken</figcaption>
+                                    <p class="card__subtitle important">Fried, Baked or BBQ</p>
+                                    <h4 class="card__details">Price: <span class="important">$90</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f9">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/oxtail.png" alt="Oxtail"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Oxtail</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$230</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <figure class="card " id="f10">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/turkey.png" alt="Turkey Wing"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Turkey Wing</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$60</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div id="food-desserts" style="display: none;">
+                        <figure class="card " id="d1">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/potatoepie.png" alt="Sweet Potato Pie"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Sweet Potato Pie</figcaption>
+                                    <h4 class="card__details">Price  3": <span class="important">$4</span>
+                                    <h4 class="card__details">Price 9": <span class="important">$12</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                         <figure class="card " id="d3">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/pecanpie.png" alt="Pecan Pie, 9 inch"
+                                    class="card__image">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Pecan Pie, 9"</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$20</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                         <figure class="card " id="d4">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/poundcake.png" alt="7-UP Pound Cake"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">7-UP Pound Cake</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$25</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                         <figure class="card " id="d5">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/coconutcake.png" alt="Coconut Cake"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Coconut Cake</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$40</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                         <figure class="card " id="d6">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/applepie.png" alt="Apple Pie, 9 inch"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Apple Pie, 9"</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$20</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                         <figure class="card " id="d7">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/peach.png" alt="Peach Cobbler"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Peach Cobbler</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$15</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+                         <figure class="card " id="d8">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/chocolate.png" alt="German Chocolate Cake"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">German Chocolate Cake</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$40</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+
+                         <figure class="card " id="d9">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/redcake.png" alt="Red Velvet Cake"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Red Velvet Cake</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$35</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+
+                         <figure class="card " id="d10">
+                            <div class="row ">
+                                <img src="./Resources/assets/Images/menu/pudding.png" alt="Banana Pudding, Serves 50"
+                                    class="card__image card__image--forBigPicture">
+                                <div class="column column--justifyContentCenter">
+                                    <figcaption class="card__title">Banana Pudding, Serves 50</figcaption>
+                                    <h4 class="card__details">Price: <span class="important">$65</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </figure>
+
+
+
+
+
+                    </div>
+                </div>
+        
+            </div>
+            
+            
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

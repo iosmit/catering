@@ -1,0 +1,141 @@
+.container__meniu {
+  @include slide-in-bottom(0s);
+
+  @include laptop {
+    @include slide-in-left(0s);
+
+    padding-left: 5em;
+  }
+
+  .row__title {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+
+    .title {
+      margin-right: auto;
+      font-size: 55px;
+
+      @include tablet {
+        margin: auto;
+
+        font-size: 75px;
+      }
+      @include laptop {
+        font-size: 90px;
+        padding-left: 0;
+      }
+
+      &__image {
+        width: 100px;
+        margin-left: 25px;
+        padding-right: 1em;
+        @include tablet {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+.food__elements {
+  margin-bottom: 10em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  .card__food {
+    width: 80vw;
+    margin: 1em;
+    position: relative;
+
+    @include tablet {
+      width: 40vw;
+      height: 250px;
+    }
+
+    @include laptop {
+      width: 20vw;
+      height: 450px;
+    }
+    .card__title {
+      @include laptop {
+        font-size: 30px;
+        width: 16vw;
+      }
+    }
+
+    .card__image {
+      width: 100px;
+      object-fit: contain;
+      @include laptop {
+        width: 200px;
+      }
+      &--forBigPicture {
+        @include laptop {
+          width: 150px;
+        }
+      }
+
+      &--height {
+        height: 100px;
+        width: auto;
+
+        @include laptop {
+          height: 150px;
+        }
+      }
+    }
+    .row {
+      .column--justifyContentCenter {
+        align-items: center;
+      }
+      @include laptop {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+      }
+    }
+    .card__subtitle {
+      font-size: 12px;
+      width: 100px;
+      color: $orange;
+
+      @include laptop {
+        font-size: 15px;
+        width: 16vw;
+      }
+    }
+    .card__button {
+      display: none;
+      @include laptop {
+        margin-bottom: -8em;
+      }
+    }
+    .card__details {
+      position: absolute;
+      bottom: 5px;
+      font-size: 15px;
+
+      @include tablet {
+        bottom: 15px;
+        font-size: 20px;
+      }
+      .important {
+        font-size: 12.5px;
+
+        @include tablet {
+          font-size: 22.5px;
+        }
+      }
+    }
+  }
+}
+
+[id*="food-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

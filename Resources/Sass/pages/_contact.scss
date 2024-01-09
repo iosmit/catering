@@ -1,0 +1,109 @@
+.container__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include slide-in-bottom(0s);
+  @include laptop {
+    @include slide-in-left(0s);
+  }
+
+  .row {
+    @include tablet {
+      width: 100vw;
+      justify-content: space-evenly;
+    }
+    @include laptop {
+      justify-content: flex-end;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      font-size: 35px;
+
+      justify-content: space-around;
+
+      @include tablet {
+        font-size: 75px;
+      }
+      @include laptop {
+        margin: 0 auto;
+        padding-left: 10vw;
+        font-size: 90px;
+      }
+
+      &__image {
+        width: 150px;
+
+        @include tablet {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .contact__content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @include laptop {
+      flex-direction: row;
+    }
+  }
+  &__map {
+    padding-top: 1em;
+    width: 90vw;
+    object-fit: contain;
+    @include tablet {
+      width: 75vw;
+    }
+    @include laptop {
+      width: 45vw;
+      float: left;
+    }
+
+    @include laptop {
+      order: 2;
+    }
+  }
+
+  &__info {
+    padding-top: 1em;
+    padding-bottom: 20%;
+
+    width: 90vw;
+
+    @include tablet {
+      width: 75vw;
+    }
+
+    @include laptop {
+      width: 45vw;
+    }
+
+    @include laptop {
+      order: 1;
+      padding-left: 5%;
+    }
+    .info__elements {
+      font-size: 15px;
+      @include tablet {
+        font-size: 25px;
+      }
+      @include laptop {
+        font-size: 30px;
+      }
+      .important {
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}

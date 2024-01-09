@@ -1,0 +1,164 @@
+.container__home {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7.5em;
+
+  @include laptop {
+    padding-bottom: 0em;
+    margin-left: 5em;
+  }
+
+  .background {
+    background-image: url(./../assets/Images/food.jpg);
+    width: 100%;
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 150px;
+      display: flex;
+      background-color: $white;
+      position: relative;
+      bottom: -70%;
+      border-radius: 100% 100% 0 0;
+      z-index: -98;
+      @include slide-in-bottom(0s);
+    }
+
+    @include laptop {
+      height: 500px;
+    }
+  }
+
+  .home__elements {
+    margin-top: -10%;
+    padding: 0 1em;
+
+    @include tablet {
+      margin-top: -5%;
+      padding: 0 2.5em;
+    }
+    @include laptop {
+      margin-top: -5%;
+      padding-bottom: 2.5em;
+    }
+
+    &__title {
+      text-align: center;
+      @include slide-in-bottom(0s);
+      @include tablet {
+        font-size: 75px;
+      }
+      @include laptop {
+        font-size: 100px;
+      }
+    }
+
+    &__description {
+      @include slide-in-bottom(1s);
+      padding-top: 5%;
+      text-align: justify;
+      @include tablet {
+        font-size: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+    &__subtitle {
+      @include slide-in-bottom(1.25s);
+      padding-top: 5%;
+      text-align: left;
+      padding-left: 5%;
+      @include tablet {
+        font-size: 30px;
+      }
+
+      @include laptop {
+        font-size: 45px;
+      }
+    }
+  }
+
+  .carousel {
+    @include slide-in-bottom(1.5s);
+  }
+}
+
+.offert {
+  display: none;
+}
+.disclaimer {
+  @include slide-in-bottom(1.3s);
+  padding-left: 5%;
+  font-size: 12px;
+  @include tablet {
+    font-size: 15px;
+  }
+
+  .important {
+    cursor: pointer;
+  }
+}
+
+#modal {
+  @include slide-in-bck-center(0s);
+
+  z-index: 999999;
+  padding: 5vw;
+  max-width: 60vw;
+  background-color: #f6f7f8;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  right: 15%;
+  top: 15%;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border-radius: 30px;
+
+  @include tablet {
+    right: 25%;
+    font-size: 20px;
+    padding: 3vw;
+  }
+  @include laptop {
+    padding: 1vw;
+    right: 37%;
+  }
+  img {
+    width: 60vw;
+
+    @include tablet {
+      width: 50vw;
+    }
+    @include laptop {
+      width: 25vw;
+    }
+  }
+  #modal__title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #modal__close {
+    margin-left: auto;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

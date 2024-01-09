@@ -1,0 +1,13 @@
+.carousel {
+  &--padding {
+    padding-bottom: 5em;
+
+    @include laptop {
+      margin-left: 5rem;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
