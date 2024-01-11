@@ -27,6 +27,13 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-     base.style.display="block";
+    base.style.display="block";
   }
 }
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+    base.style.display="block";
+  }
+});
