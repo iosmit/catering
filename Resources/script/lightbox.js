@@ -20,7 +20,6 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
   base.style.display="block";
-  location.reload();
 }
 
 // When the user clicks anywhere outside of the modal, close it
