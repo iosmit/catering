@@ -456,7 +456,7 @@ html {
 }
 
 .container__home .background {
-  background-image: url(./../assets/Images/food1.jpg);
+  background-image: url(./../assets/Images/BackgroundLogo.jpg);
   width: 100%;
   height: 300px;
   background-position: center;
@@ -509,6 +509,12 @@ html {
 }
 
 @media (min-width: 1025px) {
+  .container__home .background {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1700px) {
   .container__home .background {
     height: 500px;
   }

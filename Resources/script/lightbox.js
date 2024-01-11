@@ -3,6 +3,7 @@ var modal = document.getElementById("myModal");
 
 //Get the base page
 var base=document.getElementById("hidePage");
+var nav=document.getElementById("navbar");
   
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
