@@ -511,12 +511,14 @@ html {
 @media (min-width: 1025px) {
   .container__home .background {
     height: 500px;
+    background-size: 150%;
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1800px) {
   .container__home .background {
     height: 500px;
+    background-size: 100%;
   }
 }
 
