@@ -240,6 +240,15 @@ figcaption {
   }
 }
 
+.responsiveContact {
+  display: block;
+  width: 45%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+}
+
 .submeniu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1154,14 +1163,14 @@ html {
 
 @media (min-width: 768px) {
   .food__elements .card__food {
-    width: 40vw;
+    width: 79vw;
     height: 250px;
   }
 }
 
 @media (min-width: 1025px) {
   .food__elements .card__food {
-    width: 20vw;
+    width: 82vw;
     height: 450px;
   }
 }
@@ -1631,6 +1640,8 @@ html {
   padding-top: 1em;
   padding-bottom: 20%;
   width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -1650,12 +1661,13 @@ html {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding-left: 5%;
+    
   }
 }
 
 .container__contact__info .info__elements {
   font-size: 15px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
