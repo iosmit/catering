@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+  &--justifyContentCenter {
+    justify-content: center;
+  }
+}
+
+.important {
+  color: $red;
+}

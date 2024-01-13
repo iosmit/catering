@@ -12,37 +12,31 @@
 
     <title>Darlene's Catering</title>
 
+    <link rel="icon" type="image/x-icon" href="./resources/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./resources/assets/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./resources/sass/main.css">
 
-    <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="logo.png" />
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-    <link rel="stylesheet" href="./Resources/Sass/main.css">
-    <link rel="icon" href="logo.png">
-
-
-    <script src="main.js"></script>
-    <script src="./Resources/script/lightbox.js" defer></script>
-    <script src="./Resources/script/filterSubmeniu.js"></script>
-
+    <script src="./resources/script/lightbox.js" defer></script>
+    <script src="./resources/script/filtermenu.js"></script>
 </head>
 
 <body>
     <div class="navbar" id="navbar">
-        <a href="./index.html"><img src="./Resources/assets/Icon/home.svg" class="navbar__logo navbar__logo--active"></a>
-        <a id="myBtn"><img id="triggger" src="./Resources/assets/Icon/food.svg" class="navbar__logo "></a>                
-        <a href="./contact.html"><img src="./Resources/assets/Icon/phone1.png" class="navbar__logo"></a>
+        <a href="./index.html"><img src="./resources/assets/icon/home.svg" class="navbar__logo navbar__logo--active"></a>
+        <a id="menubtn" href="#"><img id="triggger" src="./resources/assets/icon/menu.svg" class="navbar__logo "></a>                
+        <a href="./contact.html"><img src="./resources/assets/icon/contact.png" class="navbar__logo"></a>
     </div>
 
                  <!----------------LightBox for Menu----------------------------->
                  <div id="myModal" class="modal">
                     <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="./Resources/assets/Images/Darlene's Catering Menu.jpg" width="100%" defer>
+                    <img src="./resources/assets/images/fullpagemenu.jpg" width="100%" defer>
                     </div>
                 </div>
                 <!----------------LightBox for Menu----------------------------->
 
-    <div class="container container__home" id="hidePage">
+    <div class="container container__home" id="hidepage">
         <div class="background">
 
         </div>
@@ -53,17 +47,17 @@
                 
                 <div class="row submeniu">
                     <div class="submeniu__element submeniu__element--active" id="sides" onclick="filter(sides)">
-                        <img src="./Resources/assets/Icon/appetizer.png" alt="Appetizer Icon" class="submeniu__element__image ">
+                        <img src="./resources/assets/icon/appetizer.png" alt="Appetizer Icon" class="submeniu__element__image ">
                         <p class="submeniu__element__title">Side Dishes</p>
                     </div>
 
                     <div class="submeniu__element" id="mains" onclick="filter(mains)">
-                        <img src="./Resources/assets/Icon/spaghetti.svg" alt="Main Courses Icon" class="submeniu__element__image">
+                        <img src="./resources/assets/icon/maincourse.svg" alt="Main Courses Icon" class="submeniu__element__image">
                         <p class="submeniu__element__title">Main Course</p>
                     </div>
                     
                     <div class="submeniu__element" id="desserts" onclick="filter(desserts)">
-                        <img src="./Resources/assets/Icon/icecream.svg" alt="Dessert Icon" class="submeniu__element__image">
+                        <img src="./resources/assets/icon/desserts.svg" alt="Dessert Icon" class="submeniu__element__image">
                         <p class="submeniu__element__title">Desserts</p>
                     </div>
                 </div>
@@ -74,7 +68,7 @@
                     <div id="food-sides">
                             <figure class="card " id="c1">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/bakedbeans.png" alt="Baked Beans"
+                                    <img src="./resources/assets/images/menu/bakedbeans.png" alt="Baked Beans"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Baked Beans</figcaption>
@@ -87,7 +81,7 @@
 
                             <figure class="card" id="c2">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/cornbread.png" alt="Corn Bread"
+                                    <img src="./resources/assets/images/menu/cornbread.png" alt="Corn Bread"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Corn Bread</figcaption>
@@ -101,7 +95,7 @@
                             
                             <figure class="card" id="c3">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/greenbeans.png" alt="Green Beans"
+                                    <img src="./resources/assets/images/menu/greenbeans.png" alt="Green Beans"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Green Beans</figcaption>
@@ -118,7 +112,7 @@
             
                             <figure class="card" id="c4">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/yellowrice.png" alt="Yellow Rice"
+                                    <img src="./resources/assets/images/menu/yellowrice.png" alt="Yellow Rice"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Yellow Rice</figcaption>
@@ -132,7 +126,7 @@
 
                             <figure class="card" id="c5">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/collardgreens.png" alt="Collard Greens"
+                                    <img src="./resources/assets/images/menu/collardgreens.png" alt="Collard Greens"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Collard Greens</figcaption>
@@ -146,7 +140,7 @@
 
                             <figure class="card" id="c6">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/cornonthecob.png" alt="Corn on the Cob"
+                                    <img src="./resources/assets/images/menu/cornonthecob.png" alt="Corn on the Cob"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Corn on the Cob</figcaption>
@@ -160,7 +154,7 @@
 
                             <figure class="card" id="c7">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/mashedpotatoes.png" alt="Mashed Potatoes"
+                                    <img src="./resources/assets/images/menu/mashedpotatoes.png" alt="Mashed Potatoes"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Mashed Potatoes</figcaption>
@@ -174,7 +168,7 @@
 
                             <figure class="card" id="c8">
                                 <div class="row ">
-                                    <img src="./Resources/assets/Images/menu/macaroni.png" alt="Macaroni and Cheese"
+                                    <img src="./resources/assets/images/menu/macaroni.png" alt="Macaroni and Cheese"
                                         class="card__image">
                                     <div class="column column--justifyContentCenter">
                                         <figcaption class="card__title">Macaroni and Cheese</figcaption>
@@ -194,7 +188,7 @@
                     <div id="food-mains" style="display: none;">
                         <figure class="card " id="f1">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/fish.png" alt="Fried Fish with Grits"
+                                <img src="./resources/assets/images/menu/fish.png" alt="Fried Fish with Grits"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Fried Fish with Grits</figcaption>
@@ -206,7 +200,7 @@
 
                         <figure class="card " id="f2">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/meatloaf.png" alt="Meatloaf"
+                                <img src="./resources/assets/images/menu/meatloaf.png" alt="Meatloaf"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Meatloaf</figcaption>
@@ -218,7 +212,7 @@
 
                         <figure class="card " id="f3">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/beef.png" alt="Beef Stew"
+                                <img src="./resources/assets/images/menu/beef.png" alt="Beef Stew"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Beef Stew</figcaption>
@@ -230,7 +224,7 @@
 
                         <figure class="card " id="f4">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/seafood.png" alt="Seafood" class="card__image">
+                                <img src="./resources/assets/images/menu/seafood.png" alt="Seafood" class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Seafood Rice or Pasta</figcaption>
                                     <h4 class="card__details">Price: <span class="important">$100</span>
@@ -241,7 +235,7 @@
 
                         <figure class="card " id="f5">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/lasagna.png" alt="Lasagna"
+                                <img src="./resources/assets/images/menu/lasagna.png" alt="Lasagna"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Lasagna</figcaption>
@@ -254,7 +248,7 @@
 
                         <figure class="card " id="f6">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/pastawithchicken.png" alt="Pasta"
+                                <img src="./resources/assets/images/menu/pastawithchicken.png" alt="Pasta"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Pasta with Chicken</figcaption>
@@ -266,7 +260,7 @@
 
                         <figure class="card " id="f7">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/spaghetti.png" alt="Spaghetti"
+                                <img src="./resources/assets/images/menu/spaghetti.png" alt="Spaghetti"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Spaghetti with Meat Sauce</figcaption>
@@ -279,7 +273,7 @@
 
                         <figure class="card " id="f8">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/chicken.png" alt="Chicken"
+                                <img src="./resources/assets/images/menu/chicken.png" alt="Chicken"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Chicken</figcaption>
@@ -292,7 +286,7 @@
 
                         <figure class="card " id="f9">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/oxtail.png" alt="Oxtail"
+                                <img src="./resources/assets/images/menu/oxtail.png" alt="Oxtail"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Oxtail</figcaption>
@@ -304,7 +298,7 @@
 
                         <figure class="card " id="f10">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/turkey.png" alt="Turkey Wing"
+                                <img src="./resources/assets/images/menu/turkey.png" alt="Turkey Wing"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Turkey Wing</figcaption>
@@ -318,7 +312,7 @@
                     <div id="food-desserts" style="display: none;">
                         <figure class="card " id="d1">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/potatoepie.png" alt="Sweet Potato Pie"
+                                <img src="./resources/assets/images/menu/potatoepie.png" alt="Sweet Potato Pie"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Sweet Potato Pie</figcaption>
@@ -331,7 +325,7 @@
 
                          <figure class="card " id="d3">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/pecanpie.png" alt="Pecan Pie, 9 inch"
+                                <img src="./resources/assets/images/menu/pecanpie.png" alt="Pecan Pie, 9 inch"
                                     class="card__image">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Pecan Pie, 9"</figcaption>
@@ -343,7 +337,7 @@
 
                          <figure class="card " id="d4">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/poundcake.png" alt="7-UP Pound Cake"
+                                <img src="./resources/assets/images/menu/poundcake.png" alt="7-UP Pound Cake"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">7-UP Pound Cake</figcaption>
@@ -355,7 +349,7 @@
 
                          <figure class="card " id="d5">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/coconutcake.png" alt="Coconut Cake"
+                                <img src="./resources/assets/images/menu/coconutcake.png" alt="Coconut Cake"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Coconut Cake</figcaption>
@@ -367,7 +361,7 @@
 
                          <figure class="card " id="d6">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/applepie.png" alt="Apple Pie, 9 inch"
+                                <img src="./resources/assets/images/menu/applepie.png" alt="Apple Pie, 9 inch"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Apple Pie, 9"</figcaption>
@@ -379,7 +373,7 @@
 
                          <figure class="card " id="d7">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/peach.png" alt="Peach Cobbler"
+                                <img src="./resources/assets/images/menu/peach.png" alt="Peach Cobbler"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Peach Cobbler</figcaption>
@@ -391,7 +385,7 @@
 
                          <figure class="card " id="d8">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/chocolate.png" alt="German Chocolate Cake"
+                                <img src="./resources/assets/images/menu/chocolate.png" alt="German Chocolate Cake"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">German Chocolate Cake</figcaption>
@@ -404,7 +398,7 @@
 
                          <figure class="card " id="d9">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/redcake.png" alt="Red Velvet Cake"
+                                <img src="./resources/assets/images/menu/redcake.png" alt="Red Velvet Cake"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Red Velvet Cake</figcaption>
@@ -417,7 +411,7 @@
 
                          <figure class="card " id="d10">
                             <div class="row ">
-                                <img src="./Resources/assets/Images/menu/pudding.png" alt="Banana Pudding, Serves 50"
+                                <img src="./resources/assets/images/menu/pudding.png" alt="Banana Pudding, Serves 50"
                                     class="card__image card__image--forBigPicture">
                                 <div class="column column--justifyContentCenter">
                                     <figcaption class="card__title">Banana Pudding, Serves 50</figcaption>
