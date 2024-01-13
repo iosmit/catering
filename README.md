@@ -1,4 +1,4 @@
-Website created for a client that does food catering in FLorida.
+Website created for a client that does food catering in Florida.
 
 -Created Google Business listing for client
 
