@@ -13,4 +13,4 @@
                                 
     -set up domain and registry
     
-    -http://darlenecatering.com
+http://www.darlenecatering.com
