@@ -1,9 +1,16 @@
-Website created for a client that does food catering in Florida.
+**Website created for a client that does food catering in Florida**
 
--Created Google Business listing for client
--Created Logo
--Designed business cards
--Designed menu
--Set up domain and registry
 
--http://darlenecatering.com
+**TASKS COMPLETED:**
+
+    -created Google Business listing
+                                
+    -created logo
+                                
+    -designed business cards
+                                
+    -designed menu
+                                
+    -set up domain and registry
+    
+    -http://darlenecatering.com
