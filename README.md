@@ -6,9 +6,11 @@
 
     -created Google Business listing
                                 
-    -created logo
+    -crafted logo
                                 
     -designed business cards
+
+    -designed and created website
                                 
     -designed menu
                                 
